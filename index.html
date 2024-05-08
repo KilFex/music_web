@@ -1,66 +1,126 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
- </head>
- <body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/contenedor1.css">
+    <link rel="stylesheet" href="./css/contenedor2.css">
+    <link rel="stylesheet" href="./css/contenedor3.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
     <div class="contenedor-1">
-        <div class="titulo">
-            
-            <h1><i class="bi bi-music-note-beamed"></i> DreamMusic</h1>
-        </div>
-        <div class="menu">
-            <ul>Menu
-                <li><i class="bi bi-house-door"></i>Home</li>
-                <li><i class="bi bi-graph-up-arrow"></i>Trends</li>
-                <li><i class="bi bi-file-music"></i>Library</li>
-                <li><i class="bi bi-disc"></i>Discover</li>
-            </ul>
-        </div>
-        <div class="discover">
-            <ul>Discover
-                <li><i class="bi bi-music-note-list"></i>Playlist</li>
-                <li><i class="bi bi-broadcast-pin"></i>Podcast</li>
-                <li><i class="bi bi-file-music-fill"></i>Daily Mix</li>
-            </ul>
-        </div>
-        <div class="collection">
-            <ul>Your Collection
-                <li><i class="bi bi-heart"></i>Like Song</li>
-                <li><i class="bi bi-person-fill-check"></i>Favorite Artist</li>
-                <li><i class="bi bi-folder-fill"></i>Local</li>
-            </ul>
-        </div>
-        <div class="general">
-            <ul>General
-                <li><i class="bi bi-gear"></i>Settings</li>
-                <li><i class="bi bi-box-arrow-in-right"></i>Log Out</li>
-            </ul>
-        </div>
+      <div class="titulo">
+        <h1><i class="bi bi-music-note-beamed"></i><span class="rojo">Dream</span>Music</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          Menu
+          <li><i class="bi bi-house-door"></i> Home</li>
+          <li><i class="bi bi-graph-up-arrow"></i>Trends</li>
+          <li><i class="bi bi-file-music"></i>Library</li>
+          <li><i class="bi bi-disc"></i>Discover</li>
+        </ul>
+      </div>
+      <div class="discover">
+        <ul>
+          Discover
+          <li><i class="bi bi-music-note-list"></i>Playlist</li>
+          <li><i class="bi bi-broadcast-pin"></i>Podcast</li>
+          <li><i class="bi bi-file-music-fill"></i>Daily Mix</li>
+        </ul>
+      </div>
+      <div class="collection">
+        <ul>
+          Your Collection
+          <li><i class="bi bi-heart"></i>Like Song</li>
+          <li><i class="bi bi-person-fill-check"></i>Favorite Artist</li>
+          <li><i class="bi bi-folder-fill"></i>Local</li>
+        </ul>
+      </div>
+      <div class="general">
+        <ul>
+          General
+          <li><i class="bi bi-gear"></i>Settings</li>
+          <li><i class="bi bi-box-arrow-in-right"></i>Log Out</li>
+        </ul>
+      </div>
     </div>
     <div class="contenedor-2">
-        <header class="cabecera">
-            <div class="atajos">
-                <a href="">Music</a><a href="">Podcast</a><a href="">Live</a><a href="">Radio</a>
-            </div>
-            <div class="buscador">
-            <input type="search" class="input" placeholder="search" id="buscar">
-            <i class="bi bi-search"></i>
-            </div>
-        </header>
-        <div class="imagen-artista">
-            <img src="https://www.gacetacristiana.com.ar/web/wp-content/uploads/2022/07/rojo1.jpg" alt="">
+      <header class="cabecera">
+        <div class="atajos">
+          <a href="">Music</a><a href="">Podcast</a><a href="">Live</a
+          ><a href="">Radio</a>
         </div>
-        <div class="lista-musica"></div>
+        <div class="buscador">
+          <input type="search" class="input" placeholder="search" id="buscar" />
+          <i class="bi bi-search"></i>
+        </div>
+      </header>
+      <div class="imagen-artista">
+        <img
+          src="https://www.gacetacristiana.com.ar/web/wp-content/uploads/2022/07/rojo1.jpg"
+          alt=""
+        />
+      </div>
+      <div class="lista-musica">
+        <div class="cabecera-lista">
+          <a href="">#</a><a href="">TITLE</a><a href="">PLAYING</a><a href="">TIME</a><a href="">ALBUM</a>
+        </div>
+        <div class="music-list" id="musicList">
+
+        </div>
+      </div>
     </div>
     <div class="contenedor-3">
-        <div class="notifications">
-            
+      <div class="notifications">
+        <ul>
+          Notifications
+          <li><i class="bi bi-vinyl-fill"></i>Playlist Added</li>
+          <li><i class="bi bi-vinyl-fill"></i>Playlist Shared</li>
+          <li><i class="bi bi-file-music"></i>New music</li>
+        </ul>
+      </div>
+      <div class="listas-recientes">
+        <h3>Recent Playlists</h3>
+        <div class="escuchado-reciente">
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
         </div>
+      </div>
+      <div class="reproductor">
+        <h3 class="reproduciendo-ahora">Now Playing</h3>
+        <figure></figure>
+        <a class="titulo-cancion" id="tituloCancion"></a>
+        <div>
+          <input
+            type="range"
+            name="price"
+            id="price"
+            min="50000"
+            max="500000"
+            step="100"
+            value="250000"/>
+          <output class="price-output" for="price"></output>
+        </div>
+        <div class="botones">
+            <a href=""><i class="bi bi-repeat"></i></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+      </div>
     </div>
- </body>
- </html>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

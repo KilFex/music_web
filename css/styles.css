@@ -1,15 +1,14 @@
-.buscador {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .input {
-    padding-left: 30px;
-  }
-  .buscador i {
-    position: absolute;
-    right: 10px; 
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-1,.contenedor-2,.contenedor-3{
+ width: 100vh;
+ height: 100vh;
+}
+li{
+  list-style: none;
+}
+
+ 

@@ -1,0 +1,39 @@
+.contenedor-2{
+    background-color: #440101;
+    padding: 0 7rem;
+    width: 100%;
+}
+.lista-musica{
+    background-color: #230606;
+}
+.cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+.buscador{
+    margin-left: 50%;
+}
+.buscador {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input {
+    padding-left: 30px;
+    width: 22rem;
+  }
+  .buscador i {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .music-list{
+    display: flex;
+    flex-direction: column;
+  }
