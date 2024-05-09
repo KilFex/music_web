@@ -2,6 +2,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .contenedor-1,.contenedor-2,.contenedor-3{
  width: 100vh;

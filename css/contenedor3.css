@@ -1,3 +1,39 @@
 .contenedor-3{
     background-color: #260909;
+    color: white;
+}
+.notifications{
+    padding: 1rem 0 0 30px;
+    font-size: 20px;
+}
+.notifications ul{
+    margin-bottom: 1rem;
+}
+.notifications li{
+    padding: 1.5rem 0;
+}
+.notifications i{
+    padding: 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #631a1a;
+    color: #dc4040;
+}
+.listas-recientes h3{
+    padding-left: 2rem;
+}
+.escuchado-reciente{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    padding: 10px 0 15px 30px;
+}
+.escuchado-reciente figure{
+    width: 60%;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.music-player{
+    margin:auto;
 }

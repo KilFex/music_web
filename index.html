@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reproductor.css">
     <link rel="stylesheet" href="./css/contenedor1.css">
     <link rel="stylesheet" href="./css/contenedor2.css">
     <link rel="stylesheet" href="./css/contenedor3.css">
@@ -21,33 +22,33 @@
       <div class="menu">
         <ul>
           Menu
-          <li><i class="bi bi-house-door"></i> Home</li>
-          <li><i class="bi bi-graph-up-arrow"></i>Trends</li>
-          <li><i class="bi bi-file-music"></i>Library</li>
-          <li><i class="bi bi-disc"></i>Discover</li>
+          <li><i class="bi bi-house-door"></i> <a href="">Home</a></li>
+          <li><i class="bi bi-graph-up-arrow"></i><a href="">Trends</a></li>
+          <li><i class="bi bi-file-music"></i><a href="">Library</a></li>
+          <li><i class="bi bi-disc"></i><a href="">Discover</a></li>
         </ul>
       </div>
       <div class="discover">
         <ul>
           Discover
-          <li><i class="bi bi-music-note-list"></i>Playlist</li>
-          <li><i class="bi bi-broadcast-pin"></i>Podcast</li>
-          <li><i class="bi bi-file-music-fill"></i>Daily Mix</li>
+          <li><i class="bi bi-music-note-list"></i><a href="">Playlist</a></li>
+          <li><i class="bi bi-broadcast-pin"></i><a href="">Podcast</a></li>
+          <li><i class="bi bi-file-music-fill"></i><a href="">Daily Mix</a></li>
         </ul>
       </div>
       <div class="collection">
         <ul>
           Your Collection
-          <li><i class="bi bi-heart"></i>Like Song</li>
-          <li><i class="bi bi-person-fill-check"></i>Favorite Artist</li>
-          <li><i class="bi bi-folder-fill"></i>Local</li>
+          <li><i class="bi bi-heart"></i><a href="">Like Song</a></li>
+          <li><i class="bi bi-person-fill-check"></i><a href="">Favorite Artist</a></li>
+          <li><i class="bi bi-folder-fill"></i><a href="">Local</a></li>
         </ul>
       </div>
       <div class="general">
         <ul>
           General
-          <li><i class="bi bi-gear"></i>Settings</li>
-          <li><i class="bi bi-box-arrow-in-right"></i>Log Out</li>
+          <li><i class="bi bi-gear"></i><a href="">Settings</a></li>
+          <li><i class="bi bi-box-arrow-in-right"></i><a href="">Log Out</a></li>
         </ul>
       </div>
     </div>
@@ -70,7 +71,7 @@
       </div>
       <div class="lista-musica">
         <div class="cabecera-lista">
-          <a href="">#</a><a href="">TITLE</a><a href="">PLAYING</a><a href="">TIME</a><a href="">ALBUM</a>
+          <a href="" class="uno">#</a><a href="">TITLE</a><a href="">ARTISTA</a><a href="">TIME</a><a href="">ALBUM</a>
         </div>
         <div class="music-list" id="musicList">
 
@@ -81,9 +82,9 @@
       <div class="notifications">
         <ul>
           Notifications
-          <li><i class="bi bi-vinyl-fill"></i>Playlist Added</li>
-          <li><i class="bi bi-vinyl-fill"></i>Playlist Shared</li>
-          <li><i class="bi bi-file-music"></i>New music</li>
+          <li><i class="bi bi-vinyl-fill"></i><a href="">Playlist Added</a></li>
+          <li><i class="bi bi-vinyl-fill"></i><a href="">Playlist Shared</a></li>
+          <li><i class="bi bi-file-music"></i><a href="">New music</a></li>
         </ul>
       </div>
       <div class="listas-recientes">
@@ -92,35 +93,41 @@
           <figure></figure>
           <figure></figure>
           <figure></figure>
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
+          
         </div>
       </div>
       <div class="reproductor">
-        <h3 class="reproduciendo-ahora">Now Playing</h3>
-        <figure></figure>
-        <a class="titulo-cancion" id="tituloCancion"></a>
-        <div>
-          <input
-            type="range"
-            name="price"
-            id="price"
-            min="50000"
-            max="500000"
-            step="100"
-            value="250000"/>
-          <output class="price-output" for="price"></output>
+
+        <audio src="" id="audio"></audio>
+
+    <div class="music-player">
+        <h1 class="music-name">Song One</h1>
+        <p class="artist-name">artist</p>
+        
+        <div class="disk"></div>
+
+        <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
         </div>
-        <div class="botones">
-            <a href=""><i class="bi bi-repeat"></i></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+
+        <div class="controls">
+            <button class="btn backward-btn"><img src="./image/pre.png" alt=""></button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn forward-btn"><img src="./image/nxt.png" alt=""></button>
+
+        </div>
+
+    </div>
         </div>
       </div>
     </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/prueba.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
