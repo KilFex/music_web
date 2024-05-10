@@ -13,4 +13,54 @@ li{
   list-style: none;
 }
 
+@media only screen and (max-width: 768px){
+  .titulo, .menu,.discover,.collection,.general{
+    display: none;
+  }
+  .atajos{
+    display: none;
+  }
+  .imagen-artista img{
+    display: none;
+  }
+  .notifications{
+    display: none;
+  }
+  .listas-recientes{
+    display: none;
+  }
+  .buscador input{
+    display: none;
+  }
+  .cabecera{
+    display: none;
+  }
+  .lista-musica{
+    display: none;
+  }
+  .bi-search{
+    display: none;
+  }
+  .contenedor-2{
+    display: none;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+  }
+  .reproductor{
+    margin-bottom: 11rem;
+    padding-top: 11rem;
+  }
+  .music-player{
+    width: 400px;
+    height: 600px;
+  }
+}
+
  

@@ -43,6 +43,10 @@ a{
     display: flex;
     flex-direction: column;
     color: white;
+    max-height: 480px; 
+    overflow-y: auto;
+  
+  
   }
   .atajos a{
     padding: 0 1rem;
@@ -54,7 +58,8 @@ a{
   .imagen-artista{
     display: flex;
     justify-content: center;
-    padding: 1rem 0 2rem;
+    align-items: center;
+    padding: 1rem 0 2rem;    
   }
   .imagen-artista img{
     border-radius: 2rem;
@@ -73,3 +78,6 @@ a{
   .element_list_music:hover{
     background-color: #520000;
   }
+  .hidden {
+    display: none;
+}
